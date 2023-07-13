@@ -47,10 +47,12 @@ def run_training(my_model):
     optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
 
     # Training loop
-    num_epochs = 100
+    num_epochs = 1000
     best_accuracy = 0.0
     patience = 3  # Number of epochs to wait for improvement
     counter = 0  # Counter for early stopping
+    lr_scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=patience)
+
     for epoch in range(num_epochs):
         running_loss = 0.0
         with tqdm(total=len(trainloader), desc=f'Epoch {epoch+1}/{num_epochs}', unit='batch', disable=True) as pbar:
@@ -92,8 +94,19 @@ def run_training(my_model):
 
         # Check if early stopping criteria is met
         if counter >= patience:
-            print('Early stopping! Validation accuracy stopped improving.')
-            break
+            lr_print = optimizer.param_groups[0]['lr']
+            print(f'Decreasing lr to {lr_print}! Validation accuracy stopped improving.')
+            
+            # Decrease learning rate by 1/10
+            for param_group in optimizer.param_groups:
+                param_group['lr'] *= 0.1
+            
+            lr_scheduler.step(best_accuracy)  # Adjust learning rate scheduler based on best accuracy
+            counter = 0  # Reset the counter
+            
+            if optimizer.param_groups[0]['lr'] < 1e-6:
+                print('Learning rate reached minimum threshold. Stopping training.')
+                break
 
     print('Training finished')
 

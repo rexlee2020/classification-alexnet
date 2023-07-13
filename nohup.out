@@ -1,34 +1,58 @@
-args : Namespace(modelname='AlexNet', pretrained=False)
+/home/thinkstation/.local/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/thinkstation/.local/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+args : Namespace(modelname='torchvision.models.densenet121', pretrained='False')
+False
 Using cuda
-Epoch : 0, Validation accuracy: 10.22%
-Epoch : 1, Validation accuracy: 13.13%
-Epoch : 2, Validation accuracy: 19.26%
-Epoch : 3, Validation accuracy: 25.83%
-Epoch : 4, Validation accuracy: 34.25%
-Epoch : 5, Validation accuracy: 37.33%
-Epoch : 6, Validation accuracy: 40.45%
-Epoch : 7, Validation accuracy: 41.96%
-Epoch : 8, Validation accuracy: 43.33%
-Epoch : 9, Validation accuracy: 44.46%
-Epoch : 10, Validation accuracy: 45.10%
-Epoch : 11, Validation accuracy: 45.92%
-Epoch : 12, Validation accuracy: 47.11%
-Epoch : 13, Validation accuracy: 47.62%
-Epoch : 14, Validation accuracy: 48.56%
-Epoch : 15, Validation accuracy: 48.78%
-Epoch : 16, Validation accuracy: 49.43%
-Epoch : 17, Validation accuracy: 50.90%
-Epoch : 18, Validation accuracy: 51.19%
-Epoch : 19, Validation accuracy: 52.02%
-Epoch : 20, Validation accuracy: 52.76%
-Epoch : 21, Validation accuracy: 52.76%
-Epoch : 22, Validation accuracy: 54.26%
-Epoch : 23, Validation accuracy: 55.41%
-Epoch : 24, Validation accuracy: 55.88%
-Epoch : 25, Validation accuracy: 55.53%
-Epoch : 26, Validation accuracy: 56.81%
-Epoch : 27, Validation accuracy: 56.99%
-Epoch : 28, Validation accuracy: 57.85%
-Epoch : 29, Validation accuracy: 57.74%
-Epoch : 30, Validation accuracy: 58.08%
-Epoch : 31, Validation accuracy: 57.75%
+Epoch : 0, Validation accuracy: 41.52%
+Epoch : 1, Validation accuracy: 49.72%
+Epoch : 2, Validation accuracy: 54.13%
+Epoch : 3, Validation accuracy: 58.06%
+Epoch : 4, Validation accuracy: 59.45%
+Epoch : 5, Validation accuracy: 62.85%
+Epoch : 6, Validation accuracy: 63.89%
+Epoch : 7, Validation accuracy: 66.21%
+Epoch : 8, Validation accuracy: 66.95%
+Epoch : 9, Validation accuracy: 68.70%
+Epoch : 10, Validation accuracy: 69.23%
+Epoch : 11, Validation accuracy: 70.48%
+Epoch : 12, Validation accuracy: 70.66%
+Epoch : 13, Validation accuracy: 72.02%
+Epoch : 14, Validation accuracy: 72.83%
+Epoch : 15, Validation accuracy: 73.65%
+Epoch : 16, Validation accuracy: 73.55%
+Epoch : 17, Validation accuracy: 73.73%
+Epoch : 18, Validation accuracy: 74.40%
+Epoch : 19, Validation accuracy: 74.93%
+Epoch : 20, Validation accuracy: 75.03%
+Epoch : 21, Validation accuracy: 74.61%
+Epoch : 22, Validation accuracy: 75.46%
+Epoch : 23, Validation accuracy: 74.52%
+Epoch : 24, Validation accuracy: 75.50%
+Epoch : 25, Validation accuracy: 74.92%
+Epoch : 26, Validation accuracy: 75.72%
+Epoch : 27, Validation accuracy: 75.11%
+Epoch : 28, Validation accuracy: 76.03%
+Epoch : 29, Validation accuracy: 75.81%
+Epoch : 30, Validation accuracy: 76.19%
+Epoch : 31, Validation accuracy: 75.41%
+Epoch : 32, Validation accuracy: 76.68%
+Epoch : 33, Validation accuracy: 76.00%
+Epoch : 34, Validation accuracy: 76.42%
+Epoch : 35, Validation accuracy: 76.45%
+Decreasing lr to 0.001! Validation accuracy stopped improving.
+Epoch : 36, Validation accuracy: 78.58%
+Epoch : 37, Validation accuracy: 78.54%
+Epoch : 38, Validation accuracy: 78.77%
+Epoch : 39, Validation accuracy: 78.88%
+Epoch : 40, Validation accuracy: 78.90%
+Epoch : 41, Validation accuracy: 78.70%
+Epoch : 42, Validation accuracy: 78.99%
+Epoch : 43, Validation accuracy: 78.89%
+Epoch : 44, Validation accuracy: 78.80%
+Epoch : 45, Validation accuracy: 79.03%
+Epoch : 46, Validation accuracy: 78.91%
+Epoch : 47, Validation accuracy: 78.69%
+Epoch : 48, Validation accuracy: 78.81%
+Decreasing lr to 0.0001! Validation accuracy stopped improving.

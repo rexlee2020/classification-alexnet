@@ -1,0 +1,8 @@
+Model,pretrained,Top Accuracy
+AlexNet,False,62.98
+AlexNet2,False,76.59
+torchvision.models.alexnet,False,78.43
+torchvision.models.alexnet,True,87.63
+torchvision.models.resnet18,True,92.9
+torchvision.models.densenet121,False,77.19
+torchvision.models.densenet121,True,94.64
