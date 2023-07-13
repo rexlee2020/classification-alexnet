@@ -1,0 +1,30 @@
+args : Namespace(modelname='AlexNet', pretrained=False)
+Using cuda
+Epoch : 0, Validation accuracy: 10.22%
+Epoch : 1, Validation accuracy: 13.13%
+Epoch : 2, Validation accuracy: 19.26%
+Epoch : 3, Validation accuracy: 25.83%
+Epoch : 4, Validation accuracy: 34.25%
+Epoch : 5, Validation accuracy: 37.33%
+Epoch : 6, Validation accuracy: 40.45%
+Epoch : 7, Validation accuracy: 41.96%
+Epoch : 8, Validation accuracy: 43.33%
+Epoch : 9, Validation accuracy: 44.46%
+Epoch : 10, Validation accuracy: 45.10%
+Epoch : 11, Validation accuracy: 45.92%
+Epoch : 12, Validation accuracy: 47.11%
+Epoch : 13, Validation accuracy: 47.62%
+Epoch : 14, Validation accuracy: 48.56%
+Epoch : 15, Validation accuracy: 48.78%
+Epoch : 16, Validation accuracy: 49.43%
+Epoch : 17, Validation accuracy: 50.90%
+Epoch : 18, Validation accuracy: 51.19%
+Epoch : 19, Validation accuracy: 52.02%
+Epoch : 20, Validation accuracy: 52.76%
+Epoch : 21, Validation accuracy: 52.76%
+Epoch : 22, Validation accuracy: 54.26%
+Epoch : 23, Validation accuracy: 55.41%
+Epoch : 24, Validation accuracy: 55.88%
+Epoch : 25, Validation accuracy: 55.53%
+Epoch : 26, Validation accuracy: 56.81%
+Epoch : 27, Validation accuracy: 56.99%

@@ -1,0 +1,15 @@
+
+python3 train.py --modelname AlexNet
+python3 train.py --modelname AlexNet2
+python3 train.py --modelname torchvision.models.alexnet --pretrained False
+python3 train.py --modelname torchvision.models.alexnet --pretrained True
+
+python3 train.py --modelname torchvision.models.resnet18 --pretrained True
+python3 train.py --modelname torchvision.models.resnet50 --pretrained True
+python3 train.py --modelname torchvision.models.resnet152 --pretrained True
+
+python3 train.py --modelname torchvision.models.resnet18 --pretrained False
+python3 train.py --modelname torchvision.models.resnet50 --pretrained False
+python3 train.py --modelname torchvision.models.resnet152 --pretrained False
+
+
